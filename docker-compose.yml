@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  data_cleaner:
+    build:
+      context: ./services/data_cleaner
+    image: data_cleaner
+
+  sentiment_analyzer:
+    build:
+      context: ./services/sentiment_analyzer
+    image: sentiment_analyzer
